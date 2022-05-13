@@ -5,6 +5,7 @@ Herewith i am attaching the basic JS project to undestand local-storage in JS an
 All the prequisit and other details are mentioned as below.
 
 Prequisit to learn and understand this code/project...
+
   => Javascript
   
   => Localstorage management in JS
@@ -16,6 +17,7 @@ Prequisit to learn and understand this code/project...
   
 
 What will you undestand...
+
   =>  Complex local-storage management0
     -> Refer to whole code, espspecially JS folder
     
