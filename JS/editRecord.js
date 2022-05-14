@@ -9,7 +9,7 @@ let emp_details = {
 
 // if user do not want to change the details...
 function goBack() {
-    window.location="index.html";
+    window.location="main.html";
 }
 
 
@@ -77,7 +77,7 @@ function change() {
         local_employees_array.splice(marked_index,1);
         local_employees_array.push(emp_details);
         localStorage.setItem("employees",JSON.stringify(local_employees_array));
-        window.location = "index.html";
+        window.location = "main.html";
     }
 }
 

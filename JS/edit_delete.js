@@ -28,7 +28,7 @@ function deleteRecord(id) {
         // resetting the data in local storage...
         localStorage.setItem("employees",JSON.stringify(local_employees_array));
         // refreshing the page...
-        window.location = "index.html";
+        window.location = "main.html";
 
     } else {
         alert("Operation cancelled!");

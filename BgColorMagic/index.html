@@ -19,7 +19,7 @@
         <script src="JS/main.js"></script>
     </head>
     <body>
-        <div class="container bg-white rounded shadow">
+        <div class="container bg-white rounded shadow p-2" style="width: 600px;">
             <div class="row">
                 <div class="col">
                     <h1 style="text-align: center;">Color Magic</h1>
@@ -53,14 +53,16 @@
             <br>
             <br>
             <div class="row">
-                <div class="col">
-                    <label for="colorInp1" class="form-label">Input Color 1</label>
-                    <input type="color" class="form-field" id="colorInp1" oninput="changeColor()"  value="">
-                </div>
-
-                <div class="col">
-                    <label for="colorInp2" class="form-label">Input Color 2</label>
-                    <input type="color" class="form-field" id="colorInp2" oninput="changeColor()">
+                <div class="col d-flex justify-content-evenly">
+                    <div>
+                        <label for="colorInp1" class="form-label">Input Color 1</label>
+                        <input type="color" class="form-field" id="colorInp1" oninput="changeColor()"  value="">
+                    </div>
+    
+                    <div>
+                        <label for="colorInp2" class="form-label">Input Color 2</label>
+                        <input type="color" class="form-field" id="colorInp2" oninput="changeColor()">
+                    </div>
                 </div>
             </div>
 
@@ -81,10 +83,9 @@
             <br>
             <br>
             <div class="row">
-                <div class="col">
+                <div class="col d-flex justify-content-between">
                     <button type="button" class="btn btn-warning" onclick="random()" id="randomG">Random Gradient</button>
-                </div>
-                <div class="col">
+               
                     <button type="button" class="btn btn-warning" onclick="randomColor()">Random Color</button>
                 </div>
             </div>

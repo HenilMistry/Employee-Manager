@@ -52,7 +52,7 @@ function Add() {
             local_employees_array.push(emp_details);
             localStorage.setItem("employees",JSON.stringify(local_employees_array));
         }
-        window.location = "index.html";   
+        window.location = "main.html";   
     } else {
         console.log("Something wrong");
     }
