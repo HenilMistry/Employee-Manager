@@ -23,6 +23,17 @@
             <br>
             <div class="row">
                 <div class="col">
+                    <label for="btnGRP" class="form-label">Gradient Type</label>
+                    <div id="btnGRP" class="">
+                        <input type="radio" class="btn-check" name="options-outlined" id="linear" autocomplete="off" onclick="verify()" checked>
+                        <label class="btn btn-outline-success" for="linear">Linear</label>
+
+                        <input type="radio" class="btn-check" name="options-outlined" id="radial" autocomplete="off" onclick="verify()">
+                        <label class="btn btn-outline-success" for="radial">Radial</label>
+                    </div>
+                </div>
+
+                <div class="col">
                     <label for="gradientOption" class="form-label">Gradient Option</label>
                     <select class="form-select" aria-label="Default select example" id="gradientOption" oninput="changeColor()">
                         <option selected value="to right">to right</option>
@@ -38,7 +49,7 @@
             <div class="row">
                 <div class="col">
                     <label for="colorInp1" class="form-label">Input Color 1</label>
-                    <input type="color" class="form-field" id="colorInp1" oninput="changeColor()">
+                    <input type="color" class="form-field" id="colorInp1" oninput="changeColor()"  value="">
                 </div>
 
                 <div class="col">
@@ -51,7 +62,21 @@
             <br>
             <div class="row">
                 <div class="col">
-                    <button type="button" class="btn btn-warning" onclick="random()">Random Gradient</button>
+                    <label for="StyleOutput">Style Output Will Be Shown Here</label>
+                    <div class="input-group mb-3" id="StyleOutput">
+                        <div class="input-group-text">
+                          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="enabledStyleOP">
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with checkbox" id="StyleOP" readonly>
+                      </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-warning" onclick="random()" id="randomG">Random Gradient</button>
                 </div>
                 <div class="col">
                     <button type="button" class="btn btn-warning" onclick="randomColor()">Random Color</button>
