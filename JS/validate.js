@@ -13,9 +13,14 @@ function validateID() {
     if(current_id==null || current_id=='' || current_id.trim()=='') {
         alert("Enter valid employee id!");
         return false;
-    } else if(local_employees_array.find(function(a){ return a.emp_no == current_id}) && local_employees_array != undefined) {
-        alert("You cannot enter duplicate employee id!");
-        return false;
+    } else if(local_employees_array != undefined) {
+        
+        if(local_employees_array.find(function(a){ return a.emp_no == current_id})) {
+            alert("You cannot enter duplicate employee id!");
+            return false;
+        } else {
+            return true;
+        }
     }
     else {
         return true;
