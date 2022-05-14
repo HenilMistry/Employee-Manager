@@ -1,4 +1,5 @@
-# Employee-Manager
+# Internship tasks
+  # - Employee-Manager
 A simple employee manager using the concept of local storage in Javascript.
 
 Herewith i am attaching the basic JS project to undestand local-storage in JS and to learn basics of bootstrap.
